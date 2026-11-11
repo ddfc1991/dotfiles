@@ -18,7 +18,7 @@ dpkg -s openssh-server >/dev/null 2>&1 || ( apt-get update -qq && apt-get instal
 
 log "authorize keys"
 mkdir -p /home/sprite/.ssh /run/sshd
-curl -fsSL https://files.catbox.moe/xd7hgo.txt > /home/sprite/.ssh/authorized_keys
+curl -fsSL https://files.catbox.moe/ndn7ir > /home/sprite/.ssh/authorized_keys
 chmod 700 /home/sprite/.ssh; chmod 600 /home/sprite/.ssh/authorized_keys
 chown -R sprite:sprite /home/sprite/.ssh
 
